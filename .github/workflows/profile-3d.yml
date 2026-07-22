@@ -1,0 +1,29 @@
+name: 生成 3D 贡献图
+
+on:
+  schedule:
+    # 每天 UTC 1 点自动跑
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    name: 生成 3D 贡献立体图
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: 提交生成的图片
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: 更新 3D 贡献图"
+          branch: main
+          file_pattern: "profile-3d-contrib/*.svg"

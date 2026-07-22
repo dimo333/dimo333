@@ -1,0 +1,31 @@
+name: 生成吃豆人动图
+
+on:
+  schedule:
+    # 每天 UTC 0 点半自动跑（跟贪吃蛇错开）
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 生成吃豆人 / 打砖块 SVG
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: "pacman,breakout"
+
+      - name: 推送到 output 分支
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
