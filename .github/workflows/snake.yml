@@ -1,15 +1,8 @@
 name: 生成贪吃蛇动图
 
 on:
-  schedule:
-    # 每天 UTC 0 点自动跑一次（北京时间早上 8 点）
-    - cron: "0 0 * * *"
   # 允许在 Actions 页面手动点按钮触发
   workflow_dispatch:
-  # 每次推送到 main 也跑一次，方便立刻看到效果
-  push:
-    branches:
-      - main
 
 jobs:
   generate:

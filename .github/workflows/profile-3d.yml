@@ -1,13 +1,7 @@
 name: 生成 3D 贡献图
 
 on:
-  schedule:
-    # 每天 UTC 1 点自动跑
-    - cron: "0 1 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   generate:
