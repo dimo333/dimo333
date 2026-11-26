@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Dimo — Embedded systems and on-device ML</title>
+  <desc id="desc">嵌入式开发、端侧模型与智能交互。深圳，开源硬件创作者。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0d1d28"/>
+      <stop offset="1" stop-color="#101821"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#58d6b4"/>
+      <stop offset="1" stop-color="#8ab8f6"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#77929f" stroke-opacity=".075"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#grid)"/>
+  <path d="M48 48h32" stroke="#65dfbd" stroke-width="3"/>
+  <text x="95" y="53" fill="#9eb5c0" font-family="Consolas, monospace" font-size="14" letter-spacing="2.2">FIRMWARE / MODELS / HARDWARE</text>
+  <text x="45" y="162" fill="#f0f6fa" font-family="Segoe UI, Arial, sans-serif" font-size="100" font-weight="700" letter-spacing="-5">Dimo<tspan fill="#65dfbd">.</tspan></text>
+  <text x="50" y="215" fill="#c2d2dc" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" letter-spacing="2">嵌入式开发 · 端侧模型 · 智能交互</text>
+  <text x="50" y="273" fill="#7f9baa" font-family="Consolas, monospace" font-size="14" letter-spacing="1.6">SHENZHEN, CN</text>
+  <text x="235" y="273" fill="#65dfbd" font-family="Consolas, monospace" font-size="14" letter-spacing="1.6">@dimo333</text>
+  <g fill="none" stroke="#3a5769" stroke-width="1.5">
+    <rect x="757" y="72" width="240" height="176" rx="14"/>
+    <rect x="788" y="104" width="178" height="112" rx="6"/>
+    <path d="M757 128H697L670 101h-50M757 160H653M757 192h-60l-27 27h-50M997 128h42l27-27h79M997 160h99M997 192h42l27 27h79"/>
+    <path d="M823 72V42M859 72V42M895 72V42M931 72V42M823 248v30M859 248v30M895 248v30M931 248v30"/>
+  </g>
+  <path d="M622 160h43l12-20 17 40 17-40 12 20h34M998 160h98" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#65dfbd">
+    <circle cx="620" cy="101" r="4"/><circle cx="620" cy="219" r="4"/>
+    <circle cx="1096" cy="160" r="5"/>
+  </g>
+  <g fill="#8ab8f6"><circle cx="1145" cy="101" r="4"/><circle cx="1145" cy="219" r="4"/></g>
+  <text x="877" y="147" text-anchor="middle" fill="#c8e7e0" font-family="Consolas, monospace" font-size="22" letter-spacing="3">CODE</text>
+  <path d="M842 161h70" stroke="#3a5769"/>
+  <text x="877" y="185" text-anchor="middle" fill="#8ca8b6" font-family="Consolas, monospace" font-size="13" letter-spacing="2">MEETS HARDWARE</text>
+</svg>
